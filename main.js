@@ -4,12 +4,14 @@ const links = document.querySelector(".links");
 const navLinks = document.querySelectorAll("links .link");
 const checkBox = document.querySelector("input[type='checkbox']");
 const home = document.querySelector("#home");
+const chefs = document.querySelector("#Chefs");
 
-// function add class to animate the nav bar in the large screen
+//  add class to animate the nav bar in the large screen
 function linksIn() {
     links.classList.toggle("linksIn");
 }
 //  dark mode
 checkBox.addEventListener("change", function () {
     home.classList.toggle("dark-mode");
+    chefs.classList.toggle("dark-mode");
 });

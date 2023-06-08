@@ -24,9 +24,11 @@ html {
 }
 .dark-mode {
     color: white !important ;
-    background-color: black !important ;
+    background-color: rgb(45, 45, 45) !important ;
 }
 /* end global rules */
+/* ================================================= */
+/* ================================================= */
 
 /* start header nav bar  */
 .logo::before {
@@ -112,6 +114,8 @@ input[type="checkbox"]:checked ~ .check i.moon {
     -o-transition: all 0.3s;
 }
 /* end header nav bar  */
+/* ================================================= */
+/* ================================================= */
 
 /* start home  */
 #home {
@@ -206,6 +210,8 @@ input[type="checkbox"]:checked ~ .check i.moon {
     cursor: pointer;
 }
 /* end home  */
+/* ================================================= */
+/* ================================================= */
 
 /* start chefs */
 .cards .card {
@@ -300,5 +306,6 @@ input[type="checkbox"]:checked ~ .check i.moon {
     top: 10px;
     right: 10px;
 }
-
 /* end chefs */
+/* ================================================= */
+/* ================================================= */
