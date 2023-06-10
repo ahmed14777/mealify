@@ -25,7 +25,7 @@
         <div class="wrapper bg-gray-200">
             <!-- start header -->
             <header
-                class="px-4 py-3 lg:py-1 bg-white mx-auto flex p-1 justify-between relative items-center w-full bg bg-red-white lg:px-52"
+                class="px-4 py-3 lg:py-1 bg-white mx-auto flex p-1 justify-between relative items-center w-full bg bg-red-white lg:px-52 lg:fixed z-30"
             >
                 <div class="logo cursor-pointer font-bold text-3xl relative">
                     Mealify
@@ -33,21 +33,27 @@
                 <ul
                     class="z-10 links absolute right-[-900px] top-[60px] bg-[#e8e8e897] ease-in-out duration-1000 w-[50%] rounded-lg text-center py-2 text-xl lg:relative lg:flex lg:justify-evenly lg:right-[25%] lg:top-0 lg:bg-transparent"
                 >
-                    <li class="link my-4 lg:my-0">
+                    <span onclick="closeLinks()" class="x-close p-2 md:hidden"
+                        ><i class="fa-solid fa-x"></i
+                    ></span>
+                    <li
+                        onclick="closeLinks()"
+                        class="relative link my-4 lg:my-0"
+                    >
                         <a
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Home"
                             >Home</a
                         >
                     </li>
-                    <li class="link my-4 lg:my-0">
+                    <li class="link my-4 lg:my-0" onclick="closeLinks()">
                         <a
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Chefs"
                             >Chefs</a
                         >
                     </li>
-                    <li class="link my-4 lg:my-0">
+                    <li class="link my-4 lg:my-0" onclick="closeLinks()">
                         <a
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Gallery"
@@ -89,7 +95,7 @@
             <!-- end header -->
             <!-- start home -->
             <section
-                id="home"
+                id="Home"
                 class="flex min-h-[95vh] flex-col-reverse lg:justify-center lg:flex-row mx-auto p-1 relative items-center transition w-full bg bg-red-white lg:px-52"
             >
                 <div

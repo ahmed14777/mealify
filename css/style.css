@@ -353,6 +353,21 @@ input[type="checkbox"]:checked ~ .check i.moon {
     -ms-transition: var(--sec-transition);
     -o-transition: var(--sec-transition);
 }
+
+.gallery-img .img img {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.gallery-img .img:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 .gallery-img .img:hover .gallery-desc {
     bottom: 0;
 }

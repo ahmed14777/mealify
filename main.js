@@ -13,6 +13,9 @@ const chefsCardText = document.querySelector("#chefs .cards .card .text");
 function linksIn() {
     links.classList.toggle("linksIn");
 }
+function closeLinks() {
+    links.classList.remove("linksIn");
+}
 //  dark mode
 checkBox.addEventListener("change", function () {
     home.classList.toggle("dark-mode");
