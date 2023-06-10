@@ -206,7 +206,7 @@ input[type="checkbox"]:checked ~ .check i.moon {
     -o-transition: var(--main-transition);
 }
 .watch-video:hover .icon-play i,
-.watch-video:hover > span {
+.watch-video:hover > a {
     color: var(--main-color);
     cursor: pointer;
 }
