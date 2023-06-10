@@ -1,0 +1,34 @@
+@media (min-width: 1024px) {
+    /* start home */
+    .btns .book-table a {
+        border-top-left-radius: 0%;
+    }
+    /* end home */
+    /* start chefs */
+    .social-links {
+        width: 10%;
+    }
+    /* end chefs */
+    /* start contact */
+    .contact-details {
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+    #Contact input:first-child {
+        margin-right: 20px;
+    }
+    #Contact input:first-child,
+    #Contact input:nth-child(2) {
+        float: left;
+
+        width: calc(50% - 10px);
+    }
+
+    /* end contact */
+
+    @media (prefers-color-scheme: dark) {
+        h1 {
+            color: orange !important;
+        }
+    }
+}

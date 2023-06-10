@@ -4,15 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap"
             rel="stylesheet"
         />
+        <!--======================= -->
+        <!-- css files -->
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <!-- tailwind cdn -->
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Mealify</title>
     </head>
@@ -20,7 +25,7 @@
         <div class="wrapper bg-gray-200">
             <!-- start header -->
             <header
-                class="px-4 py-1 bg-white mx-auto flex p-1 justify-between relative items-center w-full bg bg-red-white lg:px-52"
+                class="px-4 py-3 lg:py-1 bg-white mx-auto flex p-1 justify-between relative items-center w-full bg bg-red-white lg:px-52"
             >
                 <div class="logo cursor-pointer font-bold text-3xl relative">
                     Mealify
@@ -96,7 +101,7 @@
                     <h2 class="font-bold text-5xl text-center mb-2 lg:text-6xl">
                         Delicious Food
                     </h2>
-                    <p class="text-sm p-3 lg:text-2xl">
+                    <p class="text-sm p-3 md:px-30 lg:text-2xl">
                         Sed autem laudantium dolores. Voluptatem itaque ea
                         consequatur eveniet. Eum quas beatae cumque eum quaerat.
                     </p>
@@ -105,7 +110,7 @@
                     >
                         <div class="book-table">
                             <a
-                                class="inline-block text-white cursor-pointer py-3 px-6"
+                                class="inline-block text-white cursor-pointer py-3 px-5"
                                 href="#"
                                 >Book a Table</a
                             >
@@ -124,18 +129,14 @@
                 <div
                     class="img-main z-0 flex justify-center items-center mt-[50px] lg:mt-0"
                 >
-                    <img
-                        class="w-full lg:w-[80%]"
-                        src="img/hero-img.png"
-                        alt=""
-                    />
+                    <img class="w-[80%]" src="img/hero-img.png" alt="" />
                 </div>
             </section>
             <!-- end home -->
             <!-- start chefs -->
             <div
                 id="Chefs"
-                class="chefs py-24 flex flex-col justify-center items-center px-5 bg-gray-100"
+                class="chefs py-24 px-5 lg:px-20 flex flex-col justify-center items-center bg-gray-100"
             >
                 <div class="title text-center mb-10">
                     <strong class="font-light">Chefs</strong>
@@ -295,6 +296,184 @@
                 </div>
             </div>
             <!-- end chefs -->
+            <!-- start Gallery -->
+            <div id="Gallery" class="pt-10 pb-40 w-full bg-gray-200">
+                <div class="container mx-auto">
+                    <div class="title text-center mb-10">
+                        <strong class="font-light">GALLERY</strong>
+                        <h1 class="text-6xl">
+                            CHECK
+                            <span class="text-red-600">OUR GALLERY</span>
+                        </h1>
+                    </div>
+                    <div
+                        class="gallery-img w-5/6 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                    >
+                        <div class="img short">
+                            <div class="gallery-desc">
+                                <h4>Pizza</h4>
+                                <p>Hawaiian pizza with ham and pineapple</p>
+                            </div>
+                            <img src="img/meal-1.jpg" alt="" />
+                        </div>
+                        <div class="img tall">
+                            <div class="gallery-desc">
+                                <h4>Beef steaks</h4>
+                                <p>
+                                    Tasty beef steaks flying above cast iron
+                                    grate with fire flames.
+                                </p>
+                            </div>
+                            <img src="img/meal-2.jpg" alt="" />
+                        </div>
+                        <div class="img short">
+                            <div class="gallery-desc">
+                                <h4>Burger</h4>
+                                <p>
+                                    grass fed bison hamburger with chips & beer
+                                </p>
+                            </div>
+                            <img src="img/meal-3.jpg" alt="" />
+                        </div>
+                        <div class="img tall">
+                            <div class="gallery-desc">
+                                <h4>Levitation pizza</h4>
+                                <p>Levitation pizza on black background.</p>
+                            </div>
+                            <img src="img/meal-4.jpg" alt="" />
+                        </div>
+                        <div class="img short">
+                            <div class="gallery-desc">
+                                <h4>Crispy Fried Chicken</h4>
+                                <p>
+                                    Golden brown chicken legs with a crunchy
+                                    coating and juicy meat
+                                </p>
+                            </div>
+                            <img src="img/meal-5.jpg" alt="" />
+                        </div>
+                        <div class="img short">
+                            <div class="gallery-desc">
+                                <h4>Frittata</h4>
+                                <p>Frittata or potato pie in a ceramic plate</p>
+                            </div>
+                            <img src="img/meal-6.jpg" alt="" />
+                        </div>
+                        <div class="img short">
+                            <div class="gallery-desc">
+                                <h4>Lyulya kebab</h4>
+                                <p>
+                                    Tender and juicy skewers of ground lamb or
+                                    beef, flavored with aromatic spices and
+                                    herbs
+                                </p>
+                            </div>
+                            <img src="img/meal-7.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Gallery -->
+            <!-- start contact -->
+            <div id="Contact" class="bg-white py-20">
+                <div class="container px-1 mx-auto">
+                    <div class="title text-center mb-10">
+                        <strong class="font-light">CONTACT</strong>
+                        <h1 class="text-5xl">
+                            Need Help ?
+                            <span class="text-red-600"> Contact Us </span>
+                        </h1>
+                    </div>
+                    <div class="w-4/5 mx-auto">
+                        <iframe
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=157%20William%20St,%20New%20York,%20NY%2010038+(Our%20adress)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            width="100%"
+                            height="300"
+                            frameborder="0"
+                            ><a
+                                href="https://www.maps.ie/distance-area-calculator.html"
+                                >measure distance on map</a
+                            ></iframe
+                        >
+                        <div class="contact-details pt-20">
+                            <div class="contact-card bg-gray-100">
+                                <div class="icon">
+                                    <i class="fa-regular fa-map"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="text-gray-600">Our Address</h3>
+                                    <p>Via Noale 12, Milano, Italia</p>
+                                </div>
+                            </div>
+                            <div class="contact-card bg-gray-100">
+                                <div class="icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="text-gray-600">Email Us</h3>
+                                    <a href="mailto:ahmedayad@engineer.com"
+                                        >ahmedayad@engineer.com</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-card bg-gray-100">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="text-gray-600">Call Us</h3>
+                                    <a class="block" href="tel:+393714627197"
+                                        >+39 371 462 7197</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-card bg-gray-100">
+                                <div class="icon">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="text-gray-600">Opening Hours</h3>
+                                    <p>
+                                        <strong>Mon-Sat:</strong> 11AM - 23PM;
+                                        <strong>Sunday</strong> : Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <input
+                                type="text"
+                                name="subject"
+                                placeholder="Your name"
+                                id="subject"
+                            />
+                            <input
+                                type="email"
+                                name=""
+                                placeholder="Your email"
+                                id="subject"
+                            />
+                            <input
+                                class=""
+                                type="text"
+                                name="subject"
+                                placeholder="Subject"
+                                id="subject"
+                            />
+                            <textarea
+                                placeholder="Message"
+                                cols="30"
+                                rows="10"
+                                class="p-3"
+                            ></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end contact -->
         </div>
         <script src="main.js"></script>
     </body>
