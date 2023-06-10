@@ -25,10 +25,4 @@
     }
 
     /* end contact */
-
-    @media (prefers-color-scheme: dark) {
-        h1 {
-            color: orange !important;
-        }
-    }
 }
