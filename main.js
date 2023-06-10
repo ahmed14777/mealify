@@ -9,6 +9,7 @@ const chefs = document.querySelector("#Chefs");
 const gallery = document.querySelector("#Gallery");
 const contact = document.querySelector("#Contact");
 const chefsCardText = document.querySelector("#chefs .cards .card .text");
+const audio = document.getElementById("audio");
 // ====================================================================================
 // ====================================================================================
 
@@ -28,6 +29,9 @@ function linksIn() {
 }
 function closeLinks() {
     links.classList.remove("linksIn");
+}
+function play() {
+    audio.play();
 }
 // ====================================================================================
 // ====================================================================================

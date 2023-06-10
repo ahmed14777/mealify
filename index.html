@@ -41,6 +41,7 @@
                         class="relative link my-4 lg:my-0"
                     >
                         <a
+                            onclick="play()"
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Home"
                             >Home</a
@@ -48,6 +49,7 @@
                     </li>
                     <li class="link my-4 lg:my-0" onclick="closeLinks()">
                         <a
+                            onclick="play()"
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Chefs"
                             >Chefs</a
@@ -55,6 +57,7 @@
                     </li>
                     <li class="link my-4 lg:my-0" onclick="closeLinks()">
                         <a
+                            onclick="play()"
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Gallery"
                             >Gallery</a
@@ -62,6 +65,7 @@
                     </li>
                     <li class="link my-4 lg:my-0">
                         <a
+                            onclick="play()"
                             class="text-gray-600 block text-lg font-bold mx-auto p-2"
                             href="#Contact"
                             >Contact</a
@@ -486,10 +490,10 @@
             <!-- end contact -->
         </div>
         <audio
+            id="audio"
             class="absolute top-[-500px]"
-            src="audio/adel.mp3"
+            src="audio/Sound.mp3"
             type="mp3"
-            autoplay
             controls
         ></audio>
         <script src="main.js"></script>
