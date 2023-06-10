@@ -6,6 +6,7 @@ const navLinks = document.querySelectorAll("links .link");
 const checkBox = document.querySelector("input[type='checkbox']");
 const home = document.querySelector("#Home");
 const chefs = document.querySelector("#Chefs");
+const socialLinks = document.querySelector(".social-links");
 const gallery = document.querySelector("#Gallery");
 const contact = document.querySelector("#Contact");
 const chefsCardText = document.querySelector("#chefs .cards .card .text");
@@ -19,6 +20,7 @@ checkBox.addEventListener("change", function () {
     chefs.classList.toggle("dark-mode");
     gallery.classList.toggle("dark-mode");
     contact.classList.toggle("dark-mode");
+    socialLinks.classList.toggle("dark-mode");
 });
 // ====================================================================================
 // ====================================================================================
