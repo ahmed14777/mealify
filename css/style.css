@@ -462,9 +462,66 @@ textarea {
     -o-transition: var(--main-transition);
 }
 
-#Contact input:focus,
+input:focus,
 textarea {
     outline-color: red;
 }
 
 /* end contact */
+
+/* start footer */
+footer {
+    background-image: linear-gradient(#0009, #0009), url("/img/footer-img.jpg");
+    color: #fff;
+}
+
+.footer-logo::before {
+    right: -10px;
+    bottom: 10px;
+}
+.footer-links li {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.footer-links li:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.quick-links .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.quick-links .links li {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.quick-links .links li:hover {
+    background-color: rgba(238, 238, 238, 0.308);
+    padding-left: 30px;
+}
+.quick-links .links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.quick-links .links li a::first-letter {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* end footer */
